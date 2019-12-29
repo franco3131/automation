@@ -7,12 +7,12 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import drivers.driverSetup;
+
 
 public class BasePage {
 
     private static final int TIMEOUT = 5;
-    private static final int POLLING = 100;
+
 
     protected WebDriver driver;
     public WebDriverWait wait;

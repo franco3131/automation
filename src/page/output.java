@@ -3,9 +3,6 @@ package page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.gargoylesoftware.htmlunit.javascript.host.Document;
-
 import BasePages.BasePage;
 
 public class output extends BasePage {

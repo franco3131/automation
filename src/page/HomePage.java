@@ -1,13 +1,6 @@
 package page;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.thoughtworks.selenium.Wait;
 
 import BasePages.BasePage;
 
@@ -21,7 +14,7 @@ public class HomePage extends BasePage {
 	   
 
 	    //*********Page Variables*********
-	    String baseURL = "https://classcalc.com/scientific-calculator";
+	    String baseURL = "http://calculator.pro/";
 	 
 
 	 

@@ -1,17 +1,19 @@
 package drivers;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 
-public class driverSetup {
+
+public class driverSetup  {
 
     public WebDriver driver;
 
-    @BeforeSuite
-    public void beforeSuite() {
+    @BeforeEach
+    public void beforeSuite() throws Exception{
         //System.setProperty("headless", "false"); // You can set this property elsewhere
         //String headless = System.getProperty("headless");
         
@@ -21,13 +23,15 @@ public class driverSetup {
         //    chromeOptions.addArguments("--headless");
       //      driver = new ChromeDriver(chromeOptions);
       //  } else {
-            System.setProperty("webdriver.chrome.driver", "WebDriver/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "WebDriver/chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
+          
+      
         //}
     }
 
-    @AfterSuite
+    @AfterEach
     public void afterSuite() {
         if(null != driver) {
             driver.close();
