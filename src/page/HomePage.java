@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
 	    String baseURL = "http://calculator.pro/";
 	 
 
-	 
+	 //whatever
 	 
 	    //*********Page Methods*********
 	    //Go to Homepage
